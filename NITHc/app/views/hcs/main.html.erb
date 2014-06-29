@@ -1,0 +1,35 @@
+<html>
+    <head>
+         <title> <%= controller.action_name %> </title>
+    </head>
+	
+  <body background="/images/3.jpg">
+  <center>
+    <font color="white">
+    <form action="/hcs/rnew1" method="get">
+	<h2>Enter the student Detail:</h2><input type="submit" value="Add Details" />
+	</form>
+	<form action="/hcs/rnew2" method="get">
+	<h2>Enter the student test report:</h2>
+	<input type="submit" value="Add Test Report">
+	</form>
+
+	<form action="/hcs/rindex1" method="get">
+	<h2>Enter the student ID:</h2>
+	<input type="text" name="eid"> 
+	<input type="submit" value="Show Details">
+	</form>
+
+	<form action="/hcs/rindex2" method="get">
+	<h2>Enter the student ID:</h2>
+	<input type="text" name="sid"> 
+	<input type="submit" value="Show Test Report">
+	</form>
+
+	<form action="/hcs/login" method="get">
+	<input type="submit" value="logout">
+
+	</form>
+	</center>
+   </body>
+</html>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  stu_id: MyString
+  course: MyString
+  category: MyString
+  contact_no: 1
+
+two:
+  name: MyString
+  stu_id: MyString
+  course: MyString
+  category: MyString
+  contact_no: 1

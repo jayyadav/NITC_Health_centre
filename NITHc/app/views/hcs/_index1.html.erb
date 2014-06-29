@@ -1,0 +1,30 @@
+<html>
+
+	<body background="/images/3.jpg">
+
+		<center>
+            <h1><font color="white">Details of Medical History</font></h1>
+			<table style="width:300px" border="4">
+				<tr>
+				<td><font color="red"><u><i><b>Stu_id</td>
+				<td><font color="red"><u><i><b>Date</td> 
+				<td><font color="red"><u><i><b>prescription_no</td>
+				<td><font color="red"><u><i><b>disease</td>
+				<td><font color="red"><u><i><b>test_prescription</td>
+				<td><font color="red"><u><i><b>medicene_prescription</td>
+				</tr>
+			<% for v in hc1 %>
+				<tr>
+   
+				<p><td><font color="white">   <%= v.stu_id %></td></p>
+				<p><td><font color="white">   <%= v.date %></td></p>
+				<p><td><font color="white">  <%= v.prescription_no %></td></p>
+				<p><td><font color="white">   <%= v.disease%></p>
+				<p><td><font color="white">   <%= v.test_prescription %></td></p>
+				<p><td><font color="white">  <%= v.medicene_prescription%></td></p>
+				</tr>
+			<% end %>
+			</table>
+		</center>
+	</body>
+</html>

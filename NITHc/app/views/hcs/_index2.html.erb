@@ -1,0 +1,26 @@
+<html>
+
+  <body background="/images/3.jpg">
+  
+       <center>
+	           <h1><font color="white">Test Report History</font></h1>
+				<table style="width:300px" border="4">
+				<tr>
+					<td><font color="red"><u><i><b>Stu_id</td>
+					<td><font color="red"><u><i><b>Date</td> 
+					<td><font color="red"><u><i><b>prescription_no</td>
+					<td><font color="red"><u><i><b>Test_report</td>
+				</tr>
+  
+		    <% for v in hc2 %>
+				<tr>
+				<p><td><font color="white">  <%= v.stu_id %></td></p>
+				<p><td><font color="white">  <%= v.date %></td></p>
+				<p><td><font color="white">  <%= v.prescription_no %></td></p>
+				<p><td><font color="white">  <%= v.test_name%></font></td></p>
+				</tr>
+			<% end %>
+			</table>
+	     </center>
+	</body>
+</html>

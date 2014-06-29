@@ -1,0 +1,16 @@
+<html>
+
+	<body>
+
+		<h1>All</h1>
+			<ul>
+				<% for v in @hc %>
+					<li>
+						<a href='/hcs/<%= v.id %>'><%= v.stu_id %></a>
+		
+					</li>
+				<% end %>
+			</ul>
+
+	</body>
+</html>

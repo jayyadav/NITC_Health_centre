@@ -1,0 +1,28 @@
+<html>
+	
+	<head>
+			<title> <%= controller.action_name %> </title>
+			<%= stylesheet_link_tag 'default.css'%>
+	</head>
+		<body background="/images/3.jpg">
+		<center><img src="/images/nitc.jpg" /></center>
+
+			<div id="center">
+				<form action="/hcs/in" method="get"><br><center>
+				
+				<b>  <font color="white"> STU_ID/STAFF_ID:<input type="text" name="sid" ><br><br>
+				PASSWORD:<input type="password" name="psw"><br><br></center>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				CATEGORY:<select name="cat">
+							<option>student</option>
+							<option>staff</option>
+						</select><br><br></font></b>
+				<center>
+					<input type="submit" value="submit"><br></form>
+					<form action="/hcs/new" method="get">
+					<input type="submit" value="REGISTRATION"></form>
+				</center>
+			</div>
+
+		</body>
+</html>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  stu_id: MyString
+  date: 2014-04-09
+  prescription_no: 1
+  test_name: MyString
+
+two:
+  stu_id: MyString
+  date: 2014-04-09
+  prescription_no: 1
+  test_name: MyString

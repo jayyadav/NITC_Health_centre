@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> <%= controller.action_name %> </title>
+</head>
+	<body background="/images/3.jpg">
+	<font color="white">
+<center>	   <h1>NITC HEaLTH CENTER</h1>
+	   <% form_for(@hc,:url=>{:action=>'create'}) do |ob| %>
+	    <%= ob.error_messages %>
+	   <p> <b>Name</b></br> <%= ob.text_field :name %></p>
+	   <p> <b>Password</b></br> <%= ob.text_field :password %></p>
+	   <p> <b>stu_id/staff_id</b></br> <%= ob.text_field :stu_id %></p>
+	   <p> <b>b_group</b></br> <%= ob.text_field :b_group %></p>
+	   <p> <b>age</b></br> <%= ob.text_field :age %></p>
+   	   <p> <b>course</b></br> <%= ob.text_field :course %></p>
+	   <p> <b>contact_no</b> </br><%= ob.text_field :contact_no %></p>
+	   <p><b>category</b> </br><%= ob.text_field :category %></p>
+	   <p> <%= ob.submit "create" %></p>
+	   
+	   </font>
+	   <% end %>
+	   </form>
+	   <form action="/hcs/login" method="get">
+		<input type="submit" value="back">
+		</center>
+    </body>
+</html>
+

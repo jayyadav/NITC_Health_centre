@@ -1,0 +1,14 @@
+<html>
+    <body>
+	
+	   <h1>ADD TEST REPORT</h1>
+	   <% form_for(@hc2,:url=>{:action=>'create2'}) do |ob| %>
+	   <p> <b>stu_id</b></br> <%= ob.text_field :stu_id %></p>
+   	   <p> <b>date</b></br> <%= ob.text_field :date %></p>
+   	   <p> <b>prescription_no</b></br> <%= ob.text_field :prescription_no %></p>
+	   <p> <b>test_name</b> </br><%= ob.text_field :test_name %></p>
+	   <p> <%= ob.submit "create" %></p>
+	   <% end %>
+    </body>
+</html>
+

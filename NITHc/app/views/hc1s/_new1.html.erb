@@ -1,0 +1,17 @@
+<html>
+    <body>
+	
+	   <h1>LOGIN AS A DOCTOR NITC HELTH CENTER</h1>
+	   <% form_for(hc1,:url=>{:action=>'create1'}) do |ob| %>
+	   
+	   <p> <b>stu_id</b></br> <%= ob.text_field :stu_id %></p>
+   	   <p> <b>date</b></br> <%= ob.text_field :date %></p>
+	   <p> <b>prescription_no</b></br> <%= ob.text_field :prescription_no%></p>
+	   <p> <b>disease</b> </br><%= ob.text_field :disease %></p>
+	   <p><b>test_prescription</b> </br><%= ob.text_field :test_prescription %></p>
+	   p><b>medicene_prescription</b> </br><%= ob.text_field :medicene_presciption %></p>
+	   <p> <%= ob.submit "create" %></p>
+	   <% end %>
+    </body>
+</html>
+

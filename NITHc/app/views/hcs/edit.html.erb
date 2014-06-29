@@ -1,0 +1,18 @@
+<html>
+    <body>
+	
+	   <h1>NITC HELTH CENTER</h1>
+	   <% form_for(@hc,:url=>{:action=>'update'}) do |ob| %>
+	   <p> <b>Name</b></br> <%= ob.text_field :name %></p>
+	   <p> <b>Password</b></br> <%= ob.text_field :password %></p>
+	   <p> <b>b_group</b></br> <%= ob.text_field :b_group %></p>
+	   <p> <b>age</b></br> <%= ob.text_field :age %></p>
+	   <p> <b>stu_id</b></br> <%= ob.text_field :stu_id %></p>
+   	   <p> <b>course</b></br> <%= ob.text_field :course %></p>
+	   <p> <b>contact_no</b> </br><%= ob.text_field :contact_no %></p>
+	   <p><b>category</b> </br><%= ob.text_field :category %></p>
+	   <p> <%= ob.submit "update" %></p>
+	   <% end %>
+    </body>
+</html>
+

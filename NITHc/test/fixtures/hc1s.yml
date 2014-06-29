@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  stu_id: MyString
+  date: 2014-04-07
+  disease: MyString
+  test_prescription: MyString
+  medicene_presciption: MyString
+
+two:
+  stu_id: MyString
+  date: 2014-04-07
+  disease: MyString
+  test_prescription: MyString
+  medicene_presciption: MyString

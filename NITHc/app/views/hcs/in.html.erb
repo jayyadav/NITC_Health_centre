@@ -1,0 +1,23 @@
+<html>
+
+	<head>
+			<title> <%= controller.action_name %> </title>
+			<%= stylesheet_link_tag 'default.css'%>
+	</head>
+
+		<body background="/images/3.jpg">
+			<font color="white">
+					<h1 ><font color="white"><center>SHOW DETAILS OF MEDICAL HISTORY</center></font></H1>
+					<% for hc in @hc %>
+					<%= render :partial=>"show1", :locals=>{:hc1=>Hc1.find_all_by_stu_id(hc.stu_id)} %>
+			
+					<h1><font color="blue"><center>SHOW DETAILS OF MEDICAL TEST REPORT</center></H1>
+					<%= render :partial=>"show2", :locals=>{:hc2=>Hc2.find_all_by_stu_id(hc.stu_id) } %>
+					<% end %>
+			</font><br><br><br>
+
+			<center>	<form action="/hcs/login" method="get">
+				<input type="submit" value="logout">
+	        </center>
+</body>
+</html>
